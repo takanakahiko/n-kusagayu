@@ -8,7 +8,7 @@ function getRandomInt(max) {
 document.getElementById("tweet-button").addEventListener("click", e => {
     const url = shareTwitterURL({
         text: `${number2kanji(getRandomInt(9999999999999999))}草粥`,
-        url: 'https://takanakahiko.me/n-kusagayu',
+        url: 'https://github.com/takanakahiko/n-kusagayu',
     })
     window.open(url);
 })
