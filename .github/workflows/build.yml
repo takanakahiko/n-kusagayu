@@ -1,6 +1,9 @@
 name: Build/release
 
 on: push
+  push:
+    branches:
+      - '!gh-pages'
 
 jobs:
   release:
