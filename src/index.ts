@@ -16,7 +16,7 @@ document.getElementById("tweet-button").addEventListener("click", e => {
     const kanji = number2kanji(n)
     const url = shareTwitterURL({
         text: `${kanji}草粥(${n}草粥)`,
-        hashtags: "#nanakusagacha",
+        hashtags: "nanakusagacha",
         url: 'https://takanakahiko.me/n-kusagayu',
     })
     window.open(url)
