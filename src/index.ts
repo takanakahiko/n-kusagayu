@@ -3,7 +3,7 @@ import { shareTwitterURL } from 'share-twitter'
 
 function getRandomInt() {
     let max = 1
-    for(var i =0; i < 20; i++){
+    for(var i =0; i < 10; i++){
         if(Math.random() < 0.15){
             max *= 10
         }
