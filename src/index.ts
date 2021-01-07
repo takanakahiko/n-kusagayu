@@ -14,8 +14,24 @@ function getRandomInt() {
 document.getElementById("tweet-button").addEventListener("click", e => {
     const n = getRandomInt()
     const kanji = n==0 ? "零 -ZERO- " : number2kanji(n)
+    let text = `${kanji}草粥(${n}草粥)`
+    if( Math.random() < 0.03) {
+        text = `あ ほ く さ 粥`
+    }
+    if( Math.random() < 0.03) {
+        text = `浅草粥`
+    }
+    if( Math.random() < 0.03) {
+        text = `みちくさ粥`
+    }
+    if( Math.random() < 0.03) {
+        text = `たまゆら粥`
+    }
+    if( Math.random() < 0.03) {
+        text = `700,000,000,000,000,000,000,000 (セブンハンドレッドセクスティリオン)草粥`
+    }
     const url = shareTwitterURL({
-        text: `${kanji}草粥(${n}草粥)`,
+        text: text,
         hashtags: "nanakusagacha",
         url: 'https://takanakahiko.me/n-kusagayu',
     })
