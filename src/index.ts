@@ -13,7 +13,7 @@ function getRandomInt() {
 
 document.getElementById("tweet-button").addEventListener("click", e => {
     const n = getRandomInt()
-    const kanji = number2kanji(n)
+    const kanji = n==0 ? "零 -ZERO- " : number2kanji(n)
     const url = shareTwitterURL({
         text: `${kanji}草粥(${n}草粥)`,
         hashtags: "nanakusagacha",
