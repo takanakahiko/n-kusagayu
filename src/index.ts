@@ -30,6 +30,9 @@ document.getElementById("tweet-button").addEventListener("click", e => {
     if( Math.random() < 0.03) {
         text = `700,000,000,000,000,000,000,000 (セブンハンドレッドセクスティリオン)草粥`
     }
+    if( Math.random() < 0.03) {
+        text = `JAXA粥`
+    }
     const url = shareTwitterURL({
         text: text,
         hashtags: "nanakusagacha",
